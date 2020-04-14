@@ -1,0 +1,47 @@
+OrdererOrgs:
+  - Name: Orderer
+    Domain: loc.com
+    EnableNodeOUs: true
+    Specs:
+      - Hostname: Orderer
+      - Hostname: Orderer2
+      - Hostname: Orderer3
+      - Hostname: Orderer4
+      - Hostname: Orderer5
+
+PeerOrgs:
+  #Intel 
+  - Name: Intel 
+    Domain: intel.loc.com
+    EnableNodeOUs: true
+    Template: 
+      Count: 2
+    Users: 
+      Count: 1
+
+  #Lenovo 
+  - Name: Lenovo 
+    Domain: lenovo.loc.com
+    EnableNodeOUs: true
+    Template: 
+      Count: 2
+    Users: 
+      Count: 1
+
+  #FedEx 
+  - Name: FedEx 
+    Domain: fedex.loc.com
+    EnableNodeOUs: true
+    Template: 
+      Count: 2
+    Users: 
+      Count: 1
+
+   #GovRegulator 
+  - Name: GovRegulator 
+    Domain: govregulator.loc.com
+    EnableNodeOUs: true
+    Template: 
+      Count: 2
+    Users: 
+      Count: 1
