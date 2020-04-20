@@ -83,3 +83,10 @@ GovRegulator:
 ../bin/configtxgen -profile FourOrgsLoCChannel -outputAnchorPeersUpdate ./channel-artifacts/GovRegulatorMSPanchors.tx -channelID $CHANNEL_NAME -asOrg GovRegulatorMSP
 
 You can read more about the different commands under configtxgen by following this link: https://hyperledger-fabric.readthedocs.io/en/release-1.4/commands/configtxgen.html
+
+
+10. To create & start all the containers: 
+docker-compose -f docker-compose-e2e.yaml up -d
+docker-compose -f docker-compose-e2e.yaml down
+
+
